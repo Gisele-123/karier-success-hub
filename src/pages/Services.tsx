@@ -71,12 +71,19 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 via-white to-teal-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-white py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Professional services and consulting"
+            className="w-full h-full object-cover opacity-10"
+          />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Our 
-              <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+              <span className="text-blue-600">
                 {" "}Services
               </span>
             </h1>
@@ -98,7 +105,7 @@ const Services = () => {
                 <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardHeader>
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-teal-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center flex-shrink-0">
                         <Icon className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -172,7 +179,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-teal-600">
+      <section className="py-16 bg-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Start Your Career Journey?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">

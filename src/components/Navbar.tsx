@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-teal-600 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">E</span>
             </div>
             <span className="text-xl font-bold text-gray-900">EPIC Careers</span>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <Button asChild className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700">
+            <Button asChild className="bg-teal-600 hover:bg-teal-700">
               <Link to="/contact">Get Started</Link>
             </Button>
           </div>
@@ -77,7 +77,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button asChild className="w-full bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700">
+                <Button asChild className="w-full bg-teal-600 hover:bg-teal-700">
                   <Link to="/contact" onClick={() => setIsOpen(false)}>Get Started</Link>
                 </Button>
               </div>
