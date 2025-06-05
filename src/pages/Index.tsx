@@ -1,8 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, TrendingUp, Users, Target, Globe, CheckCircle, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   const services = [
@@ -252,6 +252,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <ScrollToTop />
     </div>
   );
 };
