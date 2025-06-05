@@ -1,6 +1,6 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, Target, Users, Award, MapPin, Mail, Linkedin } from "lucide-react";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const About = () => {
   const values = [
@@ -287,6 +287,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <ScrollToTop />
     </div>
   );
 };
